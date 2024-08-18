@@ -22,15 +22,15 @@
             display-name = "QWERTY";
 
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |&kp LCTRL 
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   | 
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                              &kp UP_ARROW           &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0         &kp A  &kp S  &kp D     &kp F  &kp G                            &kp DOWN_ARROW         &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
- &kp LCTRL     &kp Z  &kp X  &kp C     &kp V  &kp B                         &kp LEFT_ARROW        &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+ &kp LCTRL         &kp A  &kp S  &kp D     &kp F  &kp G                            &kp DOWN_ARROW         &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+ &td0    &kp Z  &kp X  &kp C     &kp V  &kp B                         &kp LEFT_ARROW        &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                 &kp ESC      &kp LGUI  &mo 1  &lt 3 SPACE                  &kp RIGHT_ARROW      &lt 3 ENTER  &mo 2  &kp RALT
                                                                             &kp ENTER
             >;
