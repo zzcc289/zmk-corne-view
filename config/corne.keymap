@@ -105,8 +105,8 @@
             display-name = "Fn";
             bindings = <
 &trans  &kp F1  &kp F2        &kp F3     &kp F4      &kp F5         &msc SCRL_UP  &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &trans  &mkp LCLK     &mkp MCLK  &mkp RCLK   &trans   &msc SCRL_DOWN &bootloader &mkp LCLK     &mkp MCLK  &mkp RCLK  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &mmv MOVE_UP  &kp A      &trans       &trans         &msc SCRL_LEFT  &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&trans  &trans  &mkp LCLK     &mkp MCLK  &mkp RCLK     &mkp MB4  &msc SCRL_DOWN &bootloader &mkp LCLK     &mkp MCLK  &mkp RCLK  &kp PRINTSCREEN  &kp F12
+&trans  &trans  &mmv MOVE_UP  &kp A      &trans       &mkp MB5        &msc SCRL_LEFT  &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
                 &kp C_MUTE   &trans     &trans      &trans         &msc SCRL_RIGHT  &trans       &trans  &trans
                                                                     &mkp LCLK
             >;
