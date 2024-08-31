@@ -52,11 +52,11 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W       &kp E     &kp R  &kp T          &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC  
-&td0  &kp A  &kp S       &kp D     &kp F  &kp G          &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL      &kp Z  &kp X       &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                  &kp SPACE   &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 ENTER  &mo 2  &kp RALT
-                                                              &kp ENTER
+&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T          &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S      &kp D     &kp F  &kp G          &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                  &kp SPACE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 ENTER  &mo 2  &kp RALT
+                                                             &kp ENTER
             >;
 
             label = "QWERTY";
@@ -73,12 +73,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3             &kp N4            &kp N5             &mmv MOVE_UP  &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &mmv MOVE_DOWN       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &mmv MOVE_LEFT        &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                         &trans         &trans             &trans            &trans             &mmv MOVE_RIGHT       &kp INS          &kp DEL          &trans
-                                                                                                &mkp LCLK 
+&trans  &kp N1           &kp N2          &kp N3             &kp N4            &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                         &trans          &trans             &trans            &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
+                                                                                                 &mkp LCLK
             >;
+
             label = "NUMBER";
             sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
         };
@@ -104,14 +105,12 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1  &kp F2        &kp F3     &kp F4      &kp F5         &msc SCRL_UP  &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &trans  &mkp LCLK     &mkp MCLK  &mkp RCLK     &mkp MB4  &msc SCRL_DOWN &bootloader &mkp LCLK     &mkp MCLK  &mkp RCLK  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &mmv MOVE_UP  &kp A      &trans       &mkp MB5        &msc SCRL_LEFT  &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                &kp C_MUTE   &trans     &trans      &trans         &msc SCRL_RIGHT  &trans       &trans  &trans
+&trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &msc SCRL_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &msc SCRL_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans  &sys_reset  &soft_off   &bootloader  &trans     &mkp MB5    &msc SCRL_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                    &kp C_MUTE  &trans       &trans     &trans      &msc SCRL_RIGHT  &trans       &trans     &trans
                                                                     &mkp LCLK
             >;
-
-         
         };
     };
 };
