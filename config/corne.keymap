@@ -111,8 +111,7 @@
                                                                     &mkp LCLK
             >;
 
-            label = "Fn";
-            sensor-bindings = <&inc_dec_kp  &kp W       &kp E>;
+         
         };
     };
 };
