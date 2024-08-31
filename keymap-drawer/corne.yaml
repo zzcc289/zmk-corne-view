@@ -175,16 +175,16 @@ layers:
   - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - A
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&soft_off'
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLLLOCK
   - PAUSE BREAK
   - $$mdi:volume-off$$
