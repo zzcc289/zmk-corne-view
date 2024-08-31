@@ -112,7 +112,7 @@
             >;
 
             label = "Fn";
-            sensor-bindings = <&inc_dec_kp  &mkp MB4  &mkp MB5>;
+            sensor-bindings = <&inc_dec_kp  &kp W       &kp E>;
         };
     };
 };
