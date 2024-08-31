@@ -89,7 +89,7 @@ layers:
   - RGB BRD
   - END
   - PG DN
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
