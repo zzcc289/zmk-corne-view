@@ -59,7 +59,7 @@
             >;
 
             label = "QWERTY";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
         };
 
         lower_layer {
@@ -80,6 +80,7 @@
             >;
 
             label = "NUMBER";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         raise_layer {
@@ -93,11 +94,13 @@
 
             bindings = <
 &trans  &kp AMPS    &kp ASTRK    &kp LPAR   &kp UNDERSCORE  &kp HOME    &mmv MOVE_UP     &kp PG_UP  &kp AMPS  &kp UP    &kp TILDE  &kp PIPE  &kp DEL
-&trans  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS        &kp END     &mmv MOVE_DOWN     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp INS
-&trans  &kp EXCL    &kp AT       &kp HASH   &kp RPAR        &kp LBRC    &mmv MOVE_LEFT     &kp RBRC   &trans    &trans    &trans     &trans    &trans
-                    &trans       &trans     &mo 3           &trans      &mmv MOVE_RIGHT     &trans     &trans    &trans
+&trans  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS        &kp END     &mmv MOVE_DOWN   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp INS
+&trans  &kp EXCL    &kp AT       &kp HASH   &kp RPAR        &kp LBRC    &mmv MOVE_LEFT   &kp RBRC   &trans    &trans    &trans     &trans    &trans
+                    &trans       &trans     &mo 3           &trans      &mmv MOVE_RIGHT  &trans     &trans    &trans
                                                                         &mkp LCLK
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_3 {
