@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2500  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -79,7 +80,6 @@
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -92,21 +92,21 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp AMPS    &kp ASTRK    &kp LPAR   &kp UNDERSCORE  &kp HOME    &trans  &kp PG_UP  &kp AMPS  &kp UP    &kp TILDE  &kp PIPE  &kp DEL
-&trans  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS        &kp END     &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp INS
-&trans  &kp EXCL    &kp AT       &kp HASH   &kp RPAR        &kp LBRC    &trans  &kp RBRC   &trans    &trans    &trans     &trans    &trans
-                    &trans       &trans     &mo 3           &trans      &trans  &trans     &trans    &trans
-                                                                        &trans
+&trans  &kp AMPS    &kp ASTRK    &kp LPAR   &kp UNDERSCORE  &kp HOME    &trans     &kp PG_UP  &kp AMPS  &kp UP    &kp TILDE  &kp PIPE  &kp DEL
+&trans  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS        &kp END     &trans     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp INS
+&trans  &kp EXCL    &kp AT       &kp HASH   &kp RPAR        &kp LBRC    &trans     &kp RBRC   &trans    &trans    &trans     &trans    &trans
+                    &trans       &trans     &mo 3           &trans      &trans     &trans     &trans    &trans
+                                                                        &mkp LCLK
             >;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &msc SCRL_UP     &kp F7       &kp F8     &kp F9       &kp F10     &kp F11          &kp F12
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &msc SCRL_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans      &out OUT_USB  &out OUT_BLE  &bootloader   &trans        &mkp MB5        &msc SCRL_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                          &trans        &trans        &trans        &trans          &msc SCRL_RIGHT  &trans       &trans     &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &msc SCRL_UP     &kp F7           &kp F8  &kp F9       &kp F10     &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &msc SCRL_DOWN   &trans           &trans  &trans       &trans      &trans   &trans
+&trans      &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &msc SCRL_LEFT   &rgb_ug RGB_TOG  &trans  &bootloader  &sys_reset  &trans   &trans
+                          &trans        &trans        &trans        &trans          &msc SCRL_RIGHT  &trans           &trans  &trans
                                                                                     &mkp LCLK
             >;
         };
